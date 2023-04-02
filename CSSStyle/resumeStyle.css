@@ -1,0 +1,165 @@
+:root{
+--bgColor: #c54a18;
+--altBGColor: #29acbd;
+--flexBGColor: #ee7329;
+--navColor: #bdf6ee;
+--contrastText: #ffffff;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+head {
+text-align: center;
+}
+.precont {
+  background-color: var(--bgColor);
+  padding: 20px;
+  color: var(--contrastText);
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.HaydenImage{
+max-width: 40%;
+border: solid 10px var(--contrastText);
+border-radius: 25px;
+}
+
+
+header {
+  background-color: var(--altBGColor);
+  color: var(--contrastText);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; 
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex-basis: calc(50% - 10px);
+  background-color: var(--flexBGColor);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.flex-item-nav{
+  flex-basis: 100%;
+  background-color: var(--navColor);
+  margin-bottom: 5px;
+  margin-top: 20px;
+  padding: 20px;
+  
+}
+
+.flex-item-solo{
+  flex-basis: 100%;
+  background-color: var(--bgColor);
+  color: var(--contrastText);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  
+}
+
+footer {
+  background-color: var(--altBGColor);
+  color: var(--contrastText);
+  padding: 10px;
+  text-align: center;
+
+}
+.botLink{
+  color: var(--contrastText);
+}
+
+
+header nav{
+  display:flex;
+  justify-content: flex-end;
+  height: 10%;
+  flex-wrap: wrap;
+}
+
+header nav a{
+  background-color: var(--navColor);
+  border-radius: 10px;
+  padding:0px 20px;
+  margin-left:5%;
+  height: 50%;
+
+  color:var(--altBGColor);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--bgColor);
+  color: var(--contrastText);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 590px) {
+  .flex-container {
+      flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 591px) {
+  .flex-item {
+      flex-basis: calc(50% - 10px);
+  }
+}
+
+@media screen and (min-width: 791px) {
+  .flex-item {
+      flex-basis: calc(50% - 10px);
+  }
+}
+ 

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>H.Ly Comp Assignment3 "Form"</title>
+    <meta name="author" content="Hayden Ly">
+    <meta name="keywords" content="Contact, Form">
+    <link rel="stylesheet" href="CSSStyle/resumeStyle.css">
+    <link rel="stylesheet" href="CSSStyle/generalStyle.css">
+    
+</head>
+
+
+
+<div class="container">
+  <header id="top">
+    <img src="images/logo.png" alt="logo" class="logo" title="Click here to go back to the main page.">
+    <h1>Hayden Ly</h1>
+    <h4><pre>   Phone#: 403-510-3929
+   hayden20001@hotmail.com
+    </pre></h4>
+
+    <nav>
+        <div class="tooltip">
+            <a href="resume.html" class="current">Resume</a>
+            <span class="tooltiptext">Click here to go to Hayden's Resume</span>
+        </div>
+
+      <div class="tooltip">
+            <a href="index.html">Contact</a>
+            <span class="tooltiptext">Have a question? Click here!</span>
+        </div>
+    </nav>
+
+</header>
+
+<section class="precont">
+	<p>Hey! Listen!</p>
+	<audio controls>
+		<source src="images/Contact.mp3" type="audio/mp3" alt="Audio recording about the below contact methods">
+		Your browser does not support the audio element. See the below transcript.
+	  </audio>
+	</br>
+	  <button class="transcriptButton">Transcript</button>
+	  <p id="transcriptText">
+        Hey there! Thanks for visiting my page!
+    </br>
+	If you want to reach me, my email and number are below, as well as above in the header.
+    </br>
+    If you have any further questions, inquiries, thoughts, recipes, deep dark secrets, feel free to send me a message in the contact form.
+    </p>
+</section>
+
+  <div class="flex-container">
+
+    <div class="flex-item">
+        <h3>Contact Form! Send me a message!</h3>
+ 
+		<fieldset class="formGeneral">
+			<form action="mailto:hayden20001@hotmail.com" method="post">
+				<label>Subject: * </br>
+					<textarea id="subject" name="subject" required> </textarea></label>
+				<br />
+				<label>Message: *
+					<textarea id="body" name="body" rows="10" cols="40" placeholder="You get 400 characters. Use them wisely. &#128299;" required class="messageArea"></textarea></label>
+				<br />
+				<label>Phone number:
+					<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+				<br />
+            </br>
+				<label>Email: *
+					<input type="email" id="email" name="email" placeholder="someone@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="40" maxlength="40" required>
+				</label><br />
+            </br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Clear">
+			  </form>
+			</fieldset>
+			</section>
+	
+	
+	
+	</div>
+
+    <div class="flex-item">
+        <h3>Phone or Email! Don't sign me up for anything please!</h3>
+        <p>Mobile: 403-510-3929</p>
+        <p>Home: 403-510-3929</p>
+        <p>Alternate: 403-510-3929</p>
+		<p>Email: hayden20001@hotmail.com</p>
+
+      </div>
+ 
+      
+  </div>
+
+  <footer><p>Copyright &copy; 2025 Hayden Ly</p><a href="#top" class="botLink">Back to the tippity top</a></footer>
+</div>
+</html>
+
+    
